@@ -1,0 +1,258 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@media all and (min-width: 320px) {
+
+	a {
+		text-decoration: none;
+	}
+
+	a, #submit, .radio-divs input, .check-divs input, select {
+		cursor: pointer;
+	}
+
+	body {
+		position: relative;
+		font-family: 'Poppins', sans-serif;
+		color: hsl(0, 0%, 95%);
+	}
+
+	body::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		background: url('https://i.imgur.com/bUkd6DY.jpg');
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.8;
+	}
+
+	main {
+		width: 100%;
+		display: flex; flex-direction: column;
+		justify-content: center; align-items: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	#heading {
+		width: 70%;
+		display: flex; flex-direction: column;
+		justify-content: center; align-items: center;
+		text-align: center;
+		margin-bottom: 1.5rem;
+		color: white;
+	}
+
+	h1 {
+		margin-bottom: 0.5rem;
+	}
+
+	#survey-form {
+		width: 90%;
+		display: flex; flex-direction: column;
+		padding: 1.5em;
+		position: relative;
+		font-weight: 300;
+		font-size: 0.9rem;
+	}
+
+	#survey-form::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background-color: black;
+		opacity: 0.85;
+		border-radius: 0.5rem;
+	}
+
+	.division {
+		width: 100%;
+		display: flex; flex-direction: column;
+		justify-content: center; align-items: left;
+		margin-bottom: 1rem;
+	}
+
+	.drop-div {
+		margin-bottom: 1.5rem;
+	}
+
+	.division label {
+		margin-bottom: 0.2rem;
+	}
+
+	.division input, .division select {
+		border-radius: 1rem;
+		padding: 0.5rem;
+	}
+
+	.field1, .field2, .field3 {
+		margin-bottom: 1.2rem;
+	}
+
+	fieldset legend {
+		margin-bottom: 0.6rem;
+	}
+
+	.radio-divs, .check-divs {
+		margin-bottom: 0.5rem;
+		font-size: 0.8rem;
+		accent-color: seagreen;
+	}
+
+	.check-divs input {
+		border-radius: 1rem;
+	}
+
+	#textarea {
+		width: 100%;
+		margin-top: 0.5rem;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		resize: none;
+	}
+
+	.btn-section {
+		width: 100%;
+		display: flex; flex-direction: column;
+		justify-content: center; align-items: center;
+	}
+
+	#submit {
+		width: 100%;
+		height: 2rem;
+		border-radius: 2rem;
+		background-color: seagreen;
+		color: hsl(0, 0%, 95%);
+	}
+
+	footer {
+		width: 100%;
+		display: flex; flex-direction: column;
+		align-items: center; justify-content: center;
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 1.5rem;
+	}
+
+	footer p {
+		margin-bottom: 0.3rem;
+	}
+
+	.github-link, .attr-link {
+		color: skyblue;
+		font-weight: 700;
+	}
+
+}
+
+@media all and (min-width: 480px) {
+	
+	#survey-form {
+		width: 80%;
+	}
+
+}
+
+@media all and (min-width: 576px) {
+
+	#survey-form {
+		width: 75%;
+	}
+
+}
+
+@media all and (min-width: 576px) {
+
+	#survey-form {
+		width: 70%;
+		font-size: 1rem;
+	}
+
+	.radio-divs, .check-divs {
+		margin-bottom: 0.7rem;
+		font-size: 0.9rem;
+	}
+
+}
+
+@media all and (min-width: 960px) {
+
+	#title, #description {
+		position: relative;
+		padding-bottom: 0.2rem;
+	}
+
+	#title::after, #description::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 3px;
+		background-color: seagreen;
+		transform: scaleX(0);
+		transform-origin: center;
+		transition: transform 0.3s linear;
+	}
+
+	#title:hover::after, #description:hover::after {
+		transform: scaleX(1);
+	}
+
+	#survey-form {
+		width: 60%;
+		padding: 2rem;
+	}
+
+	#survey-form:hover {
+		background-color: black;
+		transition: 0.5s linear;
+		transform: translateY(0);
+		opacity: 0.95;
+		border-radius: 1em;
+	}
+
+	#submit:hover {
+		background-color: springgreen;
+	}
+
+	.github-link:hover, .attr-link:hover {
+		color: aquamarine;
+		letter-spacing: 0.05rem;
+		transition: 0.3s linear;
+	}
+
+}
+
+@media all and (min-width: 1024px) {
+
+	#survey-form {
+		width: 55%;
+		padding: 2.5rem;
+	}
+
+}
+
+@media all and (min-width: 1200px) {
+
+	#survey-form {
+		width: 50%;
+	}
+
+}
+
+@media all and (min-width: 1366px) {
+
+	#survey-form {
+		width: 47%;
+	}
+
+}

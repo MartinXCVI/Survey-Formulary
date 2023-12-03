@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!---Google font "Poppins" (weight: 300, 400, 700) {font-family: 'Poppins', sans-serif;}--->
+	<!----CSS Stylesheet---->
+	<link rel="stylesheet" href="styles.css">
+	<title>Form Survey</title>
+</head>
+<body>
+
+	<main>
+		<section id="heading">
+			<h1 id="title">IT People Survey</h1>
+			<p id="description">Thank you for taking the time to fill this form</p>
+		</section>
+		
+		<form action="#" method="#" id="survey-form">
+			<!----Name---->
+			<section class="division">
+				<label for="name" id="name-label">Name:</label>
+				<input type="text" id="name" min="2" max="36" placeholder="Enter your name here" required>
+			</section>
+			<!----Email---->
+			<section class="division">
+				<label for="email" id="email-label">Email:</label>
+				<input type="email" id="email" placeholder="Enter your email here" required>
+			</section>
+			<!----Age---->
+			<section class="division">
+				<label for="number" id="number-label">Age:</label>
+				<input type="number" id="number" min="13" max="100" placeholder="Enter your age here" required>
+			</section>
+			<!----Region---->
+			<section class="division drop-div">
+				<label for="dropdown">What is your location?</label>
+				<select name="region-list" id="dropdown">
+					<option value="northamerica">North America</option>
+					<option value="centralamerica">Central America</option>
+					<option value="southamerica">South America</option>
+					<option value="europe">Europe</option>
+					<option value="asia">Asia</option>
+					<option value="oceania">Oceania</option>
+					<option value="antarctica">Antarctica</option>
+					<option value="africa">Africa</option>
+					<option value="digitalnomad">I'm a digital nomad</option>
+				</select>
+			</section>
+			<!--------Radio fieldset-------->
+			<fieldset class="field1">
+				<legend>How would you describe yourself?</legend>
+				<!----Trainee---->
+				<section class="radio-divs">
+					<input type="radio" name="profile" id="trainee" value="trainee">
+					<label for="trainee">Trainee</label>
+				</section>
+				<!----Junior---->
+				<section class="radio-divs">
+					<input type="radio" name="profile" id="junior" value="junior">
+					<label for="junior">Junior</label>
+				</section>
+				<!----Semi-Senior---->
+				<section class="radio-divs">
+					<input type="radio" name="profile" id="semi-senior" value="semi-junior">
+					<label for="semi-senior">Semi-Senior</label>
+				</section>
+				<!----SENIOR---->
+				<section class="radio-divs">
+					<input type="radio" name="profile" id="senior" value="senior">
+					<label for="senior">SENIOR</label>
+				</section>
+			</fieldset>
+			<!--------Checkboxes field-------->
+			<fieldset class="field2">
+				<legend>What are your areas of work?</legend>
+				<section class="check-divs">
+					<input type="checkbox" name="webdev" id="web-dev" value="webdev">
+					<label for="web-dev">Web Development</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="cybsecurity" id="cyb-security" value="cybsecurity">
+					<label for="cyb-security">Cybersecurity</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="networker" id="networking" value="networker">
+					<label for="networking">Networking</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="dataanalyst" id="data-analyst" value="dataanalyst">
+					<label for="data-analyst">Data Analyst</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="datascience" id="data-science" value="datascience">
+					<label for="data-science">Data Science</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="iot" id="iot" value="iot">
+					<label for="iot">Internet of Things (IoT)</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="desktopdev" id="desktop-dev" value="desktopdev">
+					<label for="desktop-dev">Desktop Development</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="uxui" id="ux-ui" value="uxui">
+					<label for="desktop-dev">UX-UI</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="teaching" id="teach" value="teaching">
+					<label for="desktop-dev">Teaching/Mentoring</label>
+				</section>
+				<section class="check-divs">
+					<input type="checkbox" name="other" id="other" value="other">
+					<label for="other">Other</label>
+				</section>
+			</fieldset>
+			<fieldset class="field3">
+				<label for="textarea">Any other area that is not mentioned above?</label>
+				<textarea name="othertext" id="textarea" cols="30" rows="10" ></textarea>
+			</fieldset>
+			<!----Submit button section---->
+			<section class="btn-section">
+				<button id="submit">Submit</button>
+			</section>
+		</form>
+	</main>
+
+	<footer>
+		<p>Developed by <a href="https://github.com/MartinXCVI" class="github-link" target="_blank">MartinXCVI</a></p>
+		<p>Background by <a href="https://www.pexels.com/photo/flat-lay-photography-of-apple-magic-keyboard-mouse-and-mug-filled-with-coffee-beside-beans-585752/" class="attr-link" target="_blank">Toni Cuenca</a></p>
+	</footer>
+
+</body>
+</html>
